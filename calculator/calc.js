@@ -2,12 +2,10 @@ const express = require('express')
 const app = express()
 const PORT = 8020
 const HOST = '0.0.0.0';
-const leak = []
 app.get('/add/:num1/:num2', function (req, res) {
     var num1 = parseInt(req.params.num1)
     var num2 = parseInt(req.params.num2)
     var sum = (num1 + num2).toString()
-    leak.push(sum);
     res.send(sum)
 })
 
