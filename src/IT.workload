@@ -1,0 +1,9 @@
+`IT`(){
+    scenarios:[
+        {
+            executor: "closed",
+            journey: "TestCalc",
+            stages:[{10,10},{10,120},{0,10}]
+        }
+    ]
+}

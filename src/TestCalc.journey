@@ -1,0 +1,7 @@
+`TestCalc`(){
+    measure "APITime" {
+        get request {
+            url: text `http://localhost:8020/add/12/13`
+        }
+    }
+}
